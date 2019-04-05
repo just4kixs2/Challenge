@@ -30,15 +30,15 @@ for i in passwords:
 
 		#pass
 
-	#tar_archive = TarFile.open('archive5.tar')
+	tar_archive = TarFile.open('archive5.tar')
 
-	#try:
+	try:
 
-		#tar_archive.extractall(pwd=i)
+		tar_archive.extractall(pwd=i)
 
-	#except:
+	except:
 
-		#pass
+		pass
 
 
 	#rar_archive = patoolib.extract_archive('archive4.rar')
