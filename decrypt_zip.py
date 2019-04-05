@@ -16,7 +16,7 @@ for i in passwords:
 		zip_archive.extractall(pwd=i)
 	except:
 		pass
-	zip_archive = ZipFile('archive2.7z')
+	zip_archive = ZipFile('archive3.7z')
 	try:
 		zip_archive.extractall(pwd=i)
 	except:
