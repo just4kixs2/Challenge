@@ -9,10 +9,10 @@ filename = 'passwords/passwords'+str(NumberPasswords)+'.txt'	#define password li
 file = open(filename,'w')	#open file for writing
 
 
-#define function that create random ASCII strings/numbers
+#define function that create random ASCII letters/digits
 def randomString(stringLength = PasswordLength):
     letters = string.ascii_letters
-	numbers = string.digits
+    numbers = string.digits
     return ''.join(random.choice(letters + numbers) for i in range(stringLength))
 
 for i in range(1,NumberPasswords):
