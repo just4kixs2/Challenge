@@ -11,7 +11,7 @@ passwords = [line.rstrip('\n') for line in file] # read line by line and strip n
 starttime = time.time()
 
 for i in passwords:
-	zip_archive = ZipFile('archive1a.zip')
+	zip_archive = ZipFile('archive1.zip')
 	try:
 		zip_archive.extractall(pwd=i)
 	except:
