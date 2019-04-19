@@ -2,7 +2,6 @@
 
 #import libraries
 from zipfile import ZipFile
-from tarfile import TarFile
 from rarfile import RarFile
 
 import time
@@ -21,34 +20,21 @@ starttime = time.time()
 for i in passwords:
 
 	#zip_archive = ZipFile('archive1.zip')
-
 	#try:
-
 		#zip_archive.extractall(pwd=i)
-
 	#except:
-
 		#pass
 
-	tar_archive = TarFile.open('archive5.tar')
-
+	zip_archive = Zipfile('archive2.7z')
 	try:
-
-		tar_archive.extractall(pwd=i)
-
+		zip_archive.extractall(pwd=i)
 	except:
-
 		pass
 
-
-	#rar_archive = patoolib.extract_archive('archive4.rar')
-	rar_archive = RarFile("archive4.rar")
+	rar_archive = RarFile("archive3.rar")
 	try:
-
 		rar_archive.extractall(pwd=i)
-
 	except:
-
 		pass
 
 print(time.time() - starttime)
